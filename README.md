@@ -1,0 +1,2 @@
+# Lab0_PTR
+This is a repository containing laboratory work project for the Real-time Programming course at the Technical University of Moldova. The programming language used for this laboratory work is Scala. The first task of this laboratory work is situated inside the src/main/scala/helloPTR folder - there is an obect called 'Main' with a method which prints out "Hello PTR" message to the console
