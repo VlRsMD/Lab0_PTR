@@ -20,6 +20,7 @@ object extractRandomN {
     val randList = randListB.toList
     return randList
   }
+
   def main(args: Array[String]): Unit = {
     // list containing integers
     val list :List[Int] = List(1, 2, 4, 8, 4, 3)
