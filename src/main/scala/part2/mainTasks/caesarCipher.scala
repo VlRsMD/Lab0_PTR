@@ -3,7 +3,7 @@ package part2.mainTasks
 import scala.collection.mutable.ListBuffer
 
 object caesarCipher {
-  def encode (str: String, key :Int): String = {
+  def encode(str: String, key :Int): String = {
     var alph :String = "abcdefghijklmnopqrstuvwxyz"
     val strArr: Array[String] = str.split("")
     val ciphertextB :ListBuffer[String] = new ListBuffer
@@ -17,7 +17,7 @@ object caesarCipher {
     return ciphertext
   }
 
-  def decode (str: String, key :Int): String = {
+  def decode(str: String, key :Int): String = {
     var alph :String = "abcdefghijklmnopqrstuvwxyz"
     val strArr: Array[String] = str.split("")
     val plaintextB :ListBuffer[String] = new ListBuffer
