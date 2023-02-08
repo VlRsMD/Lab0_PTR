@@ -77,7 +77,7 @@ object lineWords {
     listAllLinesB += listLine1
     listAllLinesB += listLine2
     listAllLinesB += listLine3
-    // list which contains the lists containing words which are formed only of the letters of a particular row of the keyboard
+    // list containing the lists containing words which are formed only of the letters of a particular row of the keyboard
     val listAllLines = listAllLinesB.toList
     return listAllLines
   }
