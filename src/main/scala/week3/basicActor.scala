@@ -12,6 +12,6 @@ class basicActor extends Actor {
 object Main extends App {
     var m: String = scala.io.StdIn.readLine()
     val system = ActorSystem()
-    val basicAct = system.actorOf(Props(new basicActor))
-    basicAct ! m
+    val basic_actor = system.actorOf(Props(new basicActor))
+    basic_actor ! m
 }
