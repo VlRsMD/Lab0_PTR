@@ -2,7 +2,6 @@ package week3
 
 import akka.actor._
 
-
 class basicActor extends Actor {
     def receive = {
         case m: String => println(m)
