@@ -1,4 +1,4 @@
-package part2.minimalTasks
+package week2.minimalTasks
 
 object rotateLeft {
   // method to rotate a list n places to the left

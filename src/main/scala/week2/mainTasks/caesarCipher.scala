@@ -1,4 +1,4 @@
-package part2.mainTasks
+package week2.mainTasks
 
 import scala.collection.mutable.ListBuffer
 

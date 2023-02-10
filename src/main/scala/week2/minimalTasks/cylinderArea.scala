@@ -1,4 +1,4 @@
-package part2.minimalTasks
+package week2.minimalTasks
 
 object cylinderArea {
   // a method for calculating the area of cylinder given its radius and height

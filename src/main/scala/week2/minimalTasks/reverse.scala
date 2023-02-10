@@ -1,4 +1,4 @@
-package part2.minimalTasks
+package week2.minimalTasks
 
 object reverse {
   def main(args: Array[String]): Unit = {

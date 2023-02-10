@@ -1,4 +1,4 @@
-package part2.minimalTasks
+package week2.minimalTasks
 
 object smallestNumber {
   def smallestNum (a: Int, b: Int, c:Int): Int = {

@@ -1,4 +1,4 @@
-package part2.minimalTasks
+package week2.minimalTasks
 
 import scala.collection.mutable.ListBuffer
 import scala.util.Random

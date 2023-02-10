@@ -1,4 +1,4 @@
-package helloPTR
+package week1
 
 object Main {
   // Main Method

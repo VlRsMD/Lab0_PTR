@@ -1,4 +1,4 @@
-package part2.minimalTasks
+package week2.minimalTasks
 
 object isPrime {
   // a method to check whether an integer number is prime or not
