@@ -8,7 +8,7 @@ class basicActor extends Actor {
     }
 }
 
-object Main extends App {
+object bA extends App {
     var m: String = scala.io.StdIn.readLine()
     val system = ActorSystem()
     val basic_actor = system.actorOf(Props(new basicActor))
