@@ -6,7 +6,10 @@ import java.util.concurrent.Semaphore
 
 class actor extends Actor {
   def receive = {
-    case m: String => println("The message '" + m + "' has been received")
+    case List(m :String, n :String) => {
+      println("Response " + n + ": ")
+      println("The message '" + m + "' has been received." + "\n")
+    }
   }
 }
 
@@ -15,7 +18,9 @@ class actorThread extends Thread {
     val system = ActorSystem()
     val act = system.actorOf(Props(new actor))
     var message :String = "Hello!"
-    act ! message
+    var number :String = actorThread.super.getName
+    val list :List[String] = List(message, number)
+    act ! list
   }
 }
 
@@ -23,7 +28,7 @@ object multithreading_actors {
   var mutex = new Semaphore(1)
   def main(args: Array[String])
   {
-    for (i <- 1 to 4)
+    for (i <- 1 to 5)
     {
       mutex.acquire()
       var thread = new actorThread()
