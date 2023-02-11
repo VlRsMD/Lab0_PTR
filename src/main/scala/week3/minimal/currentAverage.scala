@@ -1,6 +1,7 @@
-package week3
+package week3.minimal
 
 import akka.actor._
+
 import scala.collection.mutable.ListBuffer
 
 class currentAverage extends Actor {
