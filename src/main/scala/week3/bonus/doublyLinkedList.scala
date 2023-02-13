@@ -18,7 +18,7 @@ object dLL {
 
   var head :node = _
 
-  def add(new_val :Int): Unit = {
+  def add(new_val :Int) :Unit = {
     val newNode = new node(new_val)
     // adding node to the beginning, previous is null
     newNode.prev = null
@@ -32,7 +32,7 @@ object dLL {
     head = newNode
   }
 
-  def inverse(): Unit = {
+  def inverse() :Unit = {
     val st :Stack[Int] = new Stack[Int]()
     var t :node = head
     while (t != null) {
@@ -46,7 +46,7 @@ object dLL {
     }
   }
 
-  def main(args: Array[String]) {
+  def main(args :Array[String]) {
     val system = ActorSystem()
     for (i <-1 to 5) {
       val dLLA = system.actorOf(Props(new doublyLinkedListA))
@@ -61,7 +61,7 @@ object dLL {
     head = store
     println()
     inverse()
-    println("Doubly linked list inversed: ")
+    println("Doubly linked list inverted: ")
     while (head != null) {
       print(head.value + " ")
       head = head.next
