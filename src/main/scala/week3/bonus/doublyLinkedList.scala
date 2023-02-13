@@ -1,8 +1,6 @@
 package week3.bonus
 
 import akka.actor._
-
-import scala.collection.mutable
 import scala.collection.mutable._
 
 class doublyLinkedListA extends Actor {
@@ -35,7 +33,7 @@ object dLL {
   }
 
   def inverse(): Unit = {
-    val st :Stack[Int] = new mutable.Stack[Int]()
+    val st :Stack[Int] = new Stack[Int]()
     var t :node = head
     while (t != null) {
       st.push(t.value)
@@ -49,11 +47,11 @@ object dLL {
   }
 
   def main(args: Array[String]) {
-    add(78)
-    add(42)
-    add(5)
-    add(4)
-    add(3)
+    val system = ActorSystem()
+    for (i <-1 to 5) {
+      val dLLA = system.actorOf(Props(new doublyLinkedListA))
+      add(dLLA.hashCode())
+    }
     val store :node = head
     println("Doubly linked list traversed: ")
     while (head != null) {
