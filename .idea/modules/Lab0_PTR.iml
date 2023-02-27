@@ -17,6 +17,7 @@
     <orderEntry type="library" name="sbt: com.lihaoyi:requests_2.13:0.8.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.akka:akka-actor_2.13:2.7.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe:config:1.4.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.jsoup:jsoup:1.15.4:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-java8-compat_2.13:1.0.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.10:jar" level="project" />
   </component>
