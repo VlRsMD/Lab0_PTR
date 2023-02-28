@@ -3,7 +3,6 @@ package week5.minimal
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.select.Elements
-
 import scala.collection.mutable.ListBuffer
 
 object collect_quotes extends App {
