@@ -29,5 +29,6 @@
     <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.10:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang:scala-reflect:2.13.10:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang:scalap:2.13.10:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.xerial:sqlite-jdbc:3.41.0.0:jar" level="project" />
   </component>
 </module>
