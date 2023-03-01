@@ -5,7 +5,6 @@ import org.jsoup.nodes.Document
 import org.jsoup.select.Elements
 import net.liftweb.json._
 import net.liftweb.json.Serialization.write
-
 import java.io.{File, FileWriter}
 import scala.collection.mutable.ListBuffer
 
