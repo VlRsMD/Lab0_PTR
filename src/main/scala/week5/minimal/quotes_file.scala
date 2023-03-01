@@ -6,7 +6,7 @@ import org.jsoup.select.Elements
 import net.liftweb.json._
 import net.liftweb.json.Serialization.write
 
-import java.io.{BufferedWriter, File, FileWriter}
+import java.io.{File, FileWriter}
 import scala.collection.mutable.ListBuffer
 
 object quotes_file extends App {
