@@ -5,6 +5,7 @@ import java.sql.{Connection, DriverManager, PreparedStatement, ResultSet, Result
 object star_wars_app extends App {
   http_methods.get()
   // test different http methods from the http_methods object
+
 }
 
 object connection {
