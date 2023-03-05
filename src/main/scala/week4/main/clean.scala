@@ -18,6 +18,11 @@ class clean extends Actor {
       println ("Processing line restarted")
       cleaner_actor ! "Monster"
     }
+    case Terminated(lowercase_s_actor) => {
+      val cleaner_actor = ActorSystem().actorOf(Props(new clean))
+      println ("Processing line restarted")
+      cleaner_actor ! "Monster"
+    }
   }
 }
 
@@ -53,9 +58,12 @@ class join extends Actor {
 object cleaner extends App {
   val system = ActorSystem("Clean")
   val cleaning_actor = system.actorOf(Props[clean], name ="cleaner")
+  val lowercase_s_actor = system.actorSelection(path="user/cleaner/l_s_actor")
   val joining_actor = system.actorSelection(path="user/cleaner/join_actor")
   cleaning_actor ! "Monster"
   Thread.sleep(1000)
   joining_actor ! PoisonPill
+  Thread.sleep(1000)
+  lowercase_s_actor ! PoisonPill
 }
 
