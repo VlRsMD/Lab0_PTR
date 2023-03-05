@@ -57,6 +57,31 @@ object lettersCombination {
       listB += lettersCombined
       lettersCombined = ""
     }
+    for((first, second) <- tempList zip tempList.drop(4)) {
+      lettersCombined = first+second
+      listB += lettersCombined
+      lettersCombined = ""
+    }
+    for((first, second) <- tempList zip tempList.drop(5)) {
+      lettersCombined = first+second
+      listB += lettersCombined
+      lettersCombined = ""
+    }
+    for((first, second) <- tempList zip tempList.drop(6)) {
+      lettersCombined = first+second
+      listB += lettersCombined
+      lettersCombined = ""
+    }
+    for((first, second) <- tempList zip tempList.drop(7)) {
+      lettersCombined = first+second
+      listB += lettersCombined
+      lettersCombined = ""
+    }
+    for((first, second) <- tempList zip tempList.drop(8)) {
+      lettersCombined = first+second
+      listB += lettersCombined
+      lettersCombined = ""
+    }
     val list = listB.toList
     return list
   }
