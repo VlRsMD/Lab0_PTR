@@ -13,7 +13,6 @@ class monitoringActor extends Actor {
   context.watch(monitored_actor)
   def receive = {
     case Terminated(monitored_actor) => println("The monitored actor has stopped")
-    case _ => println("The monitoring actor has received a message")
   }
 }
 
