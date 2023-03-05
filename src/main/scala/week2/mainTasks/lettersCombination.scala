@@ -89,6 +89,6 @@ object lettersCombination {
   def main(args: Array[String]): Unit = {
     println("Introduce a number: ")
     var digits: String = scala.io.StdIn.readLine()
-    println("The combination of letters corresponding to the introduced number is: " + collection(digits))
+    println("Combination of letters corresponding to the introduced number is: " + collection(digits))
   }
 }
